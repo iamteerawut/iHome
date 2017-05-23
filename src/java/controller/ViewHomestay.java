@@ -31,25 +31,49 @@ public class ViewHomestay extends HttpServlet {
         ServletContext context = request.getServletContext();
         Connection connection = (Connection) context.getAttribute("connection");
 
-        PreparedStatement select_homestay = connection.prepareStatement("select * from test_base.homestay where homestay_id = '" + request.getParameter("id") + "';");
-        ResultSet display_homestay = select_homestay.executeQuery();
+        Homestay homestay = new Homestay(connection, request.getParameter("id"));
         int score;
-        Homestay homestay = new Homestay();
-
-        if (display_homestay.next()) {
-            homestay.setHs_id(display_homestay.getString("homestay_id"));
-            homestay.setHs_name(display_homestay.getString("homestay_name"));
-            homestay.setHs_desc(display_homestay.getString("homestay_desc"));
-            homestay.setHs_address(display_homestay.getString("homestay_address"));
-            homestay.setHs_license(display_homestay.getString("homestay_license"));
-            homestay.setHs_region(display_homestay.getString("homestay_region"));
-            homestay.setHs_province(display_homestay.getString("homestay_province"));
-            homestay.setHs_district(display_homestay.getString("homestay_district"));
-            homestay.setNear_homestay(connection, (request.getParameter("id") + "';"));
-            homestay.setHs_pic(display_homestay.getString("homestay_picture"));
-            homestay.setContact(connection, (request.getParameter("id") + "';"));
-
-        }
+        homestay.setNear_homestay(connection, (request.getParameter("id") + "';"));
+        homestay.setContact(connection, (request.getParameter("id") + "';"));
+//        PreparedStatement select_homestay = connection.prepareStatement("select * from test_base.homestay where homestay_id = '" + request.getParameter("id") + "';");
+//        ResultSet display_homestay = select_homestay.executeQuery();
+//        
+//        Homestay homestay = new Homestay();
+//
+//        if (display_homestay.next()) {
+//            homestay.setHs_id(display_homestay.getString("homestay_id"));
+//            homestay.setHs_name(display_homestay.getString("homestay_name"));
+//            homestay.setHs_desc(display_homestay.getString("homestay_desc"));
+//            homestay.setHs_address(display_homestay.getString("homestay_address"));
+//            homestay.setHs_license(display_homestay.getString("homestay_license"));
+//            homestay.setHs_region(display_homestay.getString("homestay_region"));
+//            homestay.setHs_province(display_homestay.getString("homestay_province"));
+//            homestay.setHs_district(display_homestay.getString("homestay_district"));
+//            homestay.setNear_homestay(connection, (request.getParameter("id") + "';"));
+//            homestay.setHs_pic(display_homestay.getString("homestay_picture"));
+//            homestay.setContact(connection, (request.getParameter("id") + "';"));
+//
+//        }
+        
+//        PreparedStatement select_homestay = connection.prepareStatement("select * from test_base.homestay where homestay_id = '" + request.getParameter("id") + "';");
+//        ResultSet display_homestay = select_homestay.executeQuery();
+//        int score;
+//        Homestay homestay = new Homestay();
+//
+//        if (display_homestay.next()) {
+//            homestay.setHs_id(display_homestay.getString("homestay_id"));
+//            homestay.setHs_name(display_homestay.getString("homestay_name"));
+//            homestay.setHs_desc(display_homestay.getString("homestay_desc"));
+//            homestay.setHs_address(display_homestay.getString("homestay_address"));
+//            homestay.setHs_license(display_homestay.getString("homestay_license"));
+//            homestay.setHs_region(display_homestay.getString("homestay_region"));
+//            homestay.setHs_province(display_homestay.getString("homestay_province"));
+//            homestay.setHs_district(display_homestay.getString("homestay_district"));
+//            homestay.setNear_homestay(connection, (request.getParameter("id") + "';"));
+//            homestay.setHs_pic(display_homestay.getString("homestay_picture"));
+//            homestay.setContact(connection, (request.getParameter("id") + "';"));
+//
+//        }
 
         ArrayList<Room> allRoom = new ArrayList<>();
         Room room;

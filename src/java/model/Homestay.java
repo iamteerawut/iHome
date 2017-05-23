@@ -29,6 +29,26 @@ public class Homestay {
 
     }
 
+    public Homestay(Connection connection, String homestay_id) throws SQLException {
+
+        PreparedStatement select_homestay;
+        select_homestay = connection.prepareStatement("select * from test_base.homestay where homestay_id = ?");
+        select_homestay.setString(1, homestay_id);
+        ResultSet display_homestay = select_homestay.executeQuery();
+
+        if (display_homestay.next()) {
+            this.setHost(display_homestay.getString("username"));
+            this.setHs_name(display_homestay.getString("homestay_name"));
+            this.setHs_pic(display_homestay.getString("homestay_picture"));
+            this.setHs_desc(display_homestay.getString("homestay_desc"));
+            this.setHs_address(display_homestay.getString("homestay_address"));
+            this.setHs_license(display_homestay.getString("homestay_license"));
+            this.setHs_region(display_homestay.getString("homestay_region"));
+            this.setHs_province(display_homestay.getString("homestay_province"));
+            this.setHs_district(display_homestay.getString("homestay_district"));
+        }
+    }
+    
     public void OwnHomestay(Connection connection, String username) throws SQLException {
         this.setHost(username);
         this.setConnection(connection);
