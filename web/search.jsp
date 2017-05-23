@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         </p>
-                        <hr>
+<!--                        <hr>
                         <h6 class="card-title">Date</h6>
                         <p class="card-text">
                         <div class="form-group row mx-auto align-items-center">
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         </p>
-                        <hr>
+                        <hr>-->
 
                         <button type="submit" class="btn btn-primary btn-block">Search</button>
                     </form>
