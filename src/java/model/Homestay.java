@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class Homestay {
+public final class Homestay {
 
     private String hs_id;
     private String hs_pic;

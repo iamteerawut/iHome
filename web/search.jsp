@@ -60,7 +60,7 @@
                                 <span class="custom-control-description">ภาคใต้</span>
                             </label>
                         </p>
-                        <hr>
+<!--                        <hr>
                         <h6 class="card-title">Price</h6>
                         <p class="card-text">
                         <div class="form-group row mx-auto align-items-center">
@@ -75,7 +75,7 @@
                                 <input class="form-control" type="number" name="max_price" value="<%=request.getParameter("max_price")%>" id="highestPriceIn" placeholder="1500">
                             </div>
                         </div>
-                        </p>
+                        </p>-->
 <!--                        <hr>
                         <h6 class="card-title">Date</h6>
                         <p class="card-text">

@@ -31,8 +31,6 @@ public class Search extends HttpServlet {
         String[] region = request.getParameterValues("region");
         String low_price = request.getParameter("min_price");
         String max_price = request.getParameter("max_price");
-        String c_in = request.getParameter("c_in");
-        String c_out = request.getParameter("c_out");
 
         ServletContext context = getServletContext();
         Connection connection = (Connection) context.getAttribute("connection");
@@ -56,27 +54,7 @@ public class Search extends HttpServlet {
             allHome.add(homestay);
         }
 
-//        if (low_price != null || max_price != null) {
-////            allHome = new ArrayList<>();
-//            PreparedStatement select_room_price = connection.prepareStatement("select distinct homestay_id, homestay_name, homestay_desc, homestay_address, homestay_province, homestay_district, homestay_region, homestay_license, homestay_picture from test_base.homestay JOIN test_base.room USING (homestay_id) where (room_price between ? and ?) and homestay_agree = 'YES'");
-//            select_room_price.setFloat(1, Float.parseFloat(low_price));
-//            select_room_price.setFloat(2, Float.parseFloat(max_price));
-//            ResultSet display_room_price = select_room_price.executeQuery();
-//            while (display_room_price.next()) {
-//                Homestay homestay = new Homestay();
-//                homestay.setHs_id(display_room_price.getString("homestay_id"));
-//                homestay.setHs_name(display_room_price.getString("homestay_name"));
-//                homestay.setHs_desc(display_room_price.getString("homestay_desc"));
-//                homestay.setHs_address(display_room_price.getString("homestay_address"));
-//                homestay.setHs_license(display_room_price.getString("homestay_license"));
-//                homestay.setHs_region(display_room_price.getString("homestay_region"));
-//                homestay.setHs_province(display_room_price.getString("homestay_province"));
-//                homestay.setHs_district(display_room_price.getString("homestay_district"));
-//                homestay.setHs_pic(display_room_price.getString("homestay_picture"));
-//                allHome.add(homestay);
-//            }
-//        }
-
+      
         if (region != null) {
             allHome = new ArrayList<>();
             for (String reg : region) {
@@ -98,27 +76,7 @@ public class Search extends HttpServlet {
                 }
             }
         }
-//
-//        if (c_in == null || c_out == null) {
-////            allHome = new ArrayList<>();
-//            PreparedStatement select_homestay_date = connection.prepareStatement("select * from test_base.booking join test_base.room using(room_id) join test_base.homestay using(homestay_id) where check_in >= ? and check_out <= ?");
-//            select_homestay_date.setString(1, c_in);
-//            select_homestay_date.setString(2, c_out);
-//            ResultSet display_homestay_date = select_homestay_date.executeQuery();
-//            while (display_homestay_date.next()) {
-//                Homestay homestay = new Homestay();
-//                homestay.setHs_id(display_homestay_date.getString("homestay_id"));
-//                homestay.setHs_name(display_homestay_date.getString("homestay_name"));
-//                homestay.setHs_desc(display_homestay_date.getString("homestay_desc"));
-//                homestay.setHs_address(display_homestay_date.getString("homestay_address"));
-//                homestay.setHs_license(display_homestay_date.getString("homestay_license"));
-//                homestay.setHs_region(display_homestay_date.getString("homestay_region"));
-//                homestay.setHs_province(display_homestay_date.getString("homestay_province"));
-//                homestay.setHs_district(display_homestay_date.getString("homestay_district"));
-//                homestay.setHs_pic(display_homestay_date.getString("homestay_picture"));
-//                allHome.add(homestay);
-//            }
-//        }
+
 
         request.setAttribute("allHome", allHome);
         RequestDispatcher obj = request.getRequestDispatcher("/search.jsp");
