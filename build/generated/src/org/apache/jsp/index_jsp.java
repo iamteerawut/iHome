@@ -56,7 +56,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=1\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/1.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/1.jpg\" alt=\"...\" class=\"d-block\" style=\"height: 100%; width: 100%\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("        <div class=\"col-4\">\n");
@@ -65,7 +65,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=2\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/2.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/2.jpg\" alt=\"...\" class=\"d-block\" style=\"height: 100%; width: 100%\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("        <div class=\"col-2\">\n");
@@ -74,7 +74,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=3\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/3.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/3.jpg\" alt=\"...\" class=\"d-block\" style=\"height: 100%; width: 100%\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("        <div class=\"col-4\">\n");
@@ -83,7 +83,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=4\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/4.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/4.jpg\" alt=\"...\" class=\"d-block\" style=\"height: 100%; width: 100%\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("    </div>\n");
@@ -94,14 +94,14 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=5\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/5.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/5.jpg\" alt=\"...\" class=\"w-100 mt-4 mb-2\">\n");
       out.write("            </a>\n");
       out.write("            <a href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/ViewHomestay/?id=6\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/6.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/6.jpg\" alt=\"...\" class=\"w-100 mt-2 mb-4\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("        <div class=\"col-sm-8 mt-1\" >\n");
@@ -138,14 +138,14 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=7\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/7.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/7.jpg\" alt=\"...\" class=\"w-100 mt-4 mb-2\">\n");
       out.write("            </a>\n");
       out.write("            <a href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/ViewHomestay/?id=8\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/8.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/8.jpg\" alt=\"...\" class=\"w-100 mt-2 mb-4\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("    </div>\n");
@@ -156,7 +156,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=13\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/9.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/9.jpg\" alt=\"...\" class=\"d-block\" style=\"height: 100%; width: 100%\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("        <div class=\"col-2\">\n");
@@ -165,7 +165,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=27\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/10.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/10.jpg\" alt=\"...\" class=\"d-block\" style=\"height: 100%; width: 100%\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("        <div class=\"col-4\">\n");
@@ -174,7 +174,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=28\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/11.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/11.jpg\" alt=\"...\" class=\"d-block\" style=\"height: 100%; width: 100%\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("        <div class=\"col-2\">\n");
@@ -183,7 +183,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/ViewHomestay/?id=29\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${SITE_URL}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/asset/img/homestay/12.jpg\" alt=\"...\" class=\"w-100 rounded-0 mt-2 mb-2\">\n");
+      out.write("/asset/img/homestay/12.jpg\" alt=\"...\" class=\"d-block\" style=\"height: 100%; width: 100%\">\n");
       out.write("            </a>\n");
       out.write("        </div>\n");
       out.write("    </div>\n");
